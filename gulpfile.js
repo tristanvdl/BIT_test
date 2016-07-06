@@ -14,17 +14,17 @@ gulp.task('sass', function() {
 
 //javascript
 gulp.task('scripts', function() {
-    gulp.src('src/assets/js/app.js')
+    gulp.src('src/assets/js/**/*.js')
         .pipe(concat('main.js'))
         .pipe(uglify())
         .pipe(gulp.dest('build/js'));
 });
 
-//watch the files
+//watch
 gulp.task('watch', function() {
     gulp.watch('src/assets/style/scss/**/*.scss', ['sass']);
     gulp.watch('src/assets/js/*.js', ['scripts']);
 });
 
-//default task
+//default
 gulp.task('default', ['sass', 'scripts', 'watch']);
