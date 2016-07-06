@@ -1,0 +1,121 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100);
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+input {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  outline: none; }
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  font-family: "Roboto";
+  background-color: #1d1f20; }
+
+table th, table tr, table td {
+  border: 2px solid white;
+  border-collapse: separate; }
+
+table td {
+  padding: 20px; }
+
+.wrapper {
+  width: 100vw; }
+
+.content {
+  text-align: center;
+  width: 861px;
+  margin: 0 auto; }
+  .content table {
+    margin: 0 auto;
+    width: 100%; }
+    .content table th, .content table td {
+      background-color: #1d1f20;
+      color: white; }
+    .content table th {
+      padding: 10px; }
+
+.input {
+  text-align: center;
+  margin-bottom: 20px; }
+  .input h1 {
+    font-size: 20px;
+    color: white;
+    margin-top: 40px;
+    margin-bottom: 10px; }
+  .input input {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    width: 300px;
+    height: 50px;
+    background-color: #2b303b;
+    border: none;
+    color: white;
+    margin-left: 50px;
+    padding-left: 10px; }
+  .input button {
+    border: none;
+    background-color: #232833;
+    height: 50px;
+    width: 50px;
+    color: #4f5b66;
+    font-size: 10pt;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-transition: all 0.55s ease;
+    -moz-transition: all 0.55s ease;
+    -ms-transition: all 0.55s ease;
+    -o-transition: all 0.55s ease;
+    transition: all 0.55s ease;
+    opacity: 0; }
+  .input:hover button.icon {
+    opacity: 1;
+    margin-left: -50px;
+    outline: none; }
