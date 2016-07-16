@@ -2,6 +2,7 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var uglify = require('gulp-uglify');
 var concat = require('gulp-concat');
+var cleanCSS = require('gulp-clean-css');
 
 //sass
 gulp.task('sass', function() {
@@ -9,6 +10,7 @@ gulp.task('sass', function() {
         .pipe(sass({
             style: 'compressed'
         }).on('error', sass.logError))
+        .pipe(cleanCSS({compatibility: 'ie8'}))
         .pipe(gulp.dest('build/css'));
 });
 

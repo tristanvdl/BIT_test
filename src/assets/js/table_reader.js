@@ -1,7 +1,8 @@
 window.addEventListener('load',function(){
     var output_head = "",
         output_body = "",
-        head_array =  Object.keys(json_obj[1]);
+        head_array =  Object.keys(json_obj[1]),
+        search_class = document.querySelector('.search_input');
 
     //TABLE HEAD
     output_head += "<tr>";
@@ -20,4 +21,9 @@ window.addEventListener('load',function(){
         output_body += "</tr>";
     }
     document.querySelector('.tBody').innerHTML = output_body;
+
+
+
+
+
 });
