@@ -13,16 +13,11 @@ table{
     }
 }
 
-.wrapper {
-   width: 100vw;
-}
-
 .content{
     text-align: center;
-    width: 861px;
     margin: 0 auto;
+    max-width: 1800px;
     table {
-        margin: 0 auto;
         width: 100%;
         th, td {
             background-color: $background;

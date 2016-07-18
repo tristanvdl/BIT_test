@@ -22,8 +22,4 @@ window.addEventListener('load',function(){
     }
     document.querySelector('.tBody').innerHTML = output_body;
 
-
-
-
-
 });
